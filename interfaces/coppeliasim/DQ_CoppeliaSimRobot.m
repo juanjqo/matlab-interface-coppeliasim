@@ -28,29 +28,29 @@ classdef  (Abstract) DQ_CoppeliaSimRobot < handle
         coppeliasim_interface_;
     end
     methods(Abstract)
-        % This method sets the configuration in the CoppeliaSim scene.
+        % This method sets the robot configuration in the CoppeliaSim scene.
         % It is required a dynamics disabled scene. 
         set_configuration(obj);
 
-        % This method sets the target configuration in the
+        % This method sets the target robot configuration in the
         % CoppeliaSim scene. It requires a dynamics-enabled scene
         set_target_configuration(obj);
 
         % This method returns the robot configuration in the CoppeliaSim scene.
         get_configuration();
 
-        % This method sets the target configuration velocities in the CoppeliaSim scene.
+        % This method sets the target robot configuration velocities in the CoppeliaSim scene.
         % It requires a dynamics-enabled scene 
         set_target_configuration_velocities(); 
 
-        % This method returns the configuration velocities in the CoppeliaSim scene.
+        % This method returns the robot configuration velocities in the CoppeliaSim scene.
         get_configuration_velocities();
 
-        % This method sets the target configuration forces in the CoppeliaSim scene.
+        % This method sets the target robot configuration forces in the CoppeliaSim scene.
         % It requires a dynamics-enabled scene.
         set_target_configuration_forces();
 
-        % This method returns the configuration forces in the CoppeliaSim scene.
+        % This method returns the robot configuration forces in the CoppeliaSim scene.
         get_configuration_forces();
     end
 end
